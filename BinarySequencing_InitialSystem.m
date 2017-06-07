@@ -1,11 +1,11 @@
 % HS5_PEsequence_v2.m
-% written by F.Cegla August2016
-% based on Tiepie LibTiepie examples
+% written by Daniel Darvill 12/2016
+% based on Tiepie LibTiepie examples and code by Frederic Cegla
 % script sents and receives a Hanning windowed Toneburst with user
 % controllable settings
 %========================================================================
 % 
-% for repeat = 1:11 
+for repeat = 1:11 
 
     clearvars -except repeat LibTiePie
     %display(repeat)
@@ -65,7 +65,7 @@ FC_get_HS5ready;
 
     xlim([0 0.0001])
 
-% save data
-% save(strcat(pathname, num2str(Sequence_bit), filename));
+%save data
+save(strcat(pathname, num2str(Sequence_bit), filename));
 
-% end
+end
